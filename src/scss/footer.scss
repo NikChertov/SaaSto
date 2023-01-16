@@ -1,0 +1,96 @@
+.footer{
+    padding: 150px 0px 60px 0px;
+    @media(max-width: $md2+px){
+        padding-top: 80px;
+    }
+    &__up {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 58px;
+        border-bottom: 1px solid #40404021;
+        @media(max-width: $md2+px){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 35px;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        @media(max-width: $md2+px){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 35px;
+        }
+    }
+    &__link {
+        font-family: $fontFamily2;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: calc((24/18)*100%);
+        color: $color-title;
+        transition: all 0.6s ease 0s;
+        &:hover {
+            transition: all 0.6s ease 0s;
+            color: $color-orange;
+        }
+    }
+    &__icons {
+        display: flex;
+        align-items: center;
+        gap: 44px;
+        svg path {
+            transition: all 0.6s ease 0s;
+        }
+        svg {
+            &:hover {
+                path {
+                    transition: all 0.6s ease 0s;
+                    fill: $color-orange;
+                }
+            }
+        }
+    }
+    &__down {
+        margin-top: 40px;
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        p {
+            font-family: $fontFamily1;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: calc((24/18)*100%);
+            color: $color-brown;
+        }
+        @media(max-width: $md2+px){
+            flex-direction: column;
+            align-items:start;
+            gap: 35px;
+        }
+    }
+    &__priv {
+        margin-left: 110px;
+        @media(max-width: $md2+px){
+            margin-left: 0px;
+        }
+    }
+    &__all {
+        margin-left: auto;
+        a {
+            color: inherit;
+            transition: all 0.6s ease 0s;
+            &:hover{
+                transition: all 0.6s ease 0s;
+                color: $color-orange;
+            }
+        }
+        @media(max-width: $md2+px){
+            margin-left: 0px;
+        }
+    }
+}
